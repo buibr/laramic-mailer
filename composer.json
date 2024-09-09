@@ -1,0 +1,32 @@
+{
+  "name": "buibr/laramic-mailer",
+  "description": "When you need dynamic mailing, multiple mail server",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Burhan Ibrahimi",
+      "email": "bi@buib.me",
+      "homepage": "https://www.buib.me",
+      "role": "creator"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": "^8.2",
+    "laravel/framework": "^8.0",
+    "nrb/laravel-helpers": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Laramic\\Mailer\\": "src/",
+      "Laramic\\Mailer\\Seeders\\": "database/seeders/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Laramic\\Mailer\\LaramicMailerServiceProvider"
+      ]
+    }
+  }
+}
